@@ -1,0 +1,38 @@
+{
+  "enabled": {
+    "description": "启用插件",
+    "type": "bool",
+    "default": true,
+    "hint": "开启或关闭消息屏蔽功能"
+  },
+  "block_patterns": {
+    "description": "屏蔽正则表达式列表",
+    "type": "list",
+    "default": ["^#napcat", "^#test", "^napcat", "^test"],
+    "hint": "正则表达式列表，匹配的消息将被屏蔽。注意：AstrBot 会去掉命令前缀（#、/），建议同时添加带前缀和不带前缀的规则"
+  },
+  "silent_mode": {
+    "description": "静默模式",
+    "type": "bool",
+    "default": false,
+    "hint": "开启后，屏蔽消息时不发送任何提示；关闭时，会提示用户消息已被屏蔽"
+  },
+  "block_message": {
+    "description": "屏蔽提示消息",
+    "type": "string",
+    "default": "您的消息已被屏蔽，无法发送给 AI。",
+    "hint": "当静默模式关闭时，发送给用户的提示信息"
+  },
+  "admin_bypass": {
+    "description": "管理员绕过",
+    "type": "bool",
+    "default": true,
+    "hint": "开启后，管理员发送的消息不受屏蔽规则限制"
+  },
+  "log_blocked": {
+    "description": "记录屏蔽日志",
+    "type": "bool",
+    "default": true,
+    "hint": "开启后，被屏蔽的消息会记录到日志中"
+  }
+}
