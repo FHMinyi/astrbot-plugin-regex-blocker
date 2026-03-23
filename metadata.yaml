@@ -1,9 +1,9 @@
 name: astrbot_plugin_regex_blocker
-desc: 通过正则表达式屏蔽用户发送给 LLM 的消息
+desc: 通过正则表达式匹配屏蔽用户发送给 LLM 的消息
 help: 在插件配置中添加正则表达式规则，匹配的消息将被屏蔽，不会发送给 LLM。
-version: v1.0.0
-author: AI Assistant
-repo: https://github.com/yourusername/astrbot_plugin_regex_blocker
+version: v1.0.2
+author: FHMinyi
+repo: https://github.com/FHMinyi/astrbot-plugin-regex-blocker
 display_name: 正则消息屏蔽器
 support_platforms:
   - aiocqhttp
